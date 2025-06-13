@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Carlos Eduardo Lago</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const scrollElements = document.querySelectorAll('.fade-in-on-scroll');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      scrollElements.forEach(el => observer.observe(el));
+    });
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hover-card {
+      transition: all 0.3s ease-in-out;
+    }
+    .hover-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+      border-radius: 20px;
+    }
+    .gradient-bg {
+      background: linear-gradient(to right, #f0f4ff, #e8f0ff);
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body class="gradient-bg text-gray-800">
+  <header class="bg-white/70 shadow-md p-6 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 fade-in">
+      <div class="flex items-center gap-4">
+        <img src="foto-3x4.jpg" alt="Foto de Carlos Eduardo Lago" class="w-36 h-36 object-cover rounded-full border-4 border-blue-500 shadow-md">
+        <div>
+          <h1 class="text-4xl font-extrabold text-blue-800">Carlos Eduardo Lago</h1>
+          <p class="text-lg text-gray-700">Analista de Marketing Digital</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="space-y-32">
+    
+    <section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold mb-6 text-sky-700">Sobre Mim</h2>
+    <p class="text-xl leading-relaxed text-gray-700 mb-4">
+      Olá! Me chamo Carlos Eduardo Lago e sou apaixonado por marketing digital. Gosto de unir estratégia com criatividade para gerar resultados reais. Acredito que tráfego pago e copywriting não são só ferramentas — são pontes que conectam pessoas às marcas certas. Também atuo com análise de dados aplicada ao marketing digital, transformando métricas em decisões inteligentes que guiam as campanhas rumo à performance.
+    </p>
+    <p class="text-xl leading-relaxed text-gray-700">
+      Tenho perfil colaborativo, gosto de ouvir, testar e crescer com o time. Se você busca alguém comprometido, com visão analítica e que realmente veste a camisa do projeto — prazer, sou eu.
+    </p>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold mb-10 text-sky-700 text-center">Resumo Profissional</h2>
+    <p class="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+      Com uma jornada voltada à performance digital, atuo como estrategista de tráfego pago e redator de copy persuasiva. Desenvolvi campanhas de impacto para marcas como a CVC, sempre com foco em resultados reais. Tenho habilidade em traduzir dados em decisões estratégicas com ferramentas como Meta Ads e Google Analytics.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+      <div class="bg-white/70 rounded-lg p-6 shadow hover-card">
+        <h3 class="text-xl font-bold text-blue-700 mb-3">Habilidades</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Gestão de Tráfego</li>
+          <li>Copywriting</li>
+          <li>Google Ads & Meta Ads</li>
+          <li>Criação de estratégias digitais</li>
+          <li>Trabalho em equipe & liderança</li>
+        </ul>
+      </div>
+      <div class="bg-white/70 rounded-lg p-6 shadow hover-card">
+        <h3 class="text-xl font-bold text-blue-700 mb-3">Idiomas</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Português — Nativo</li>
+          <li>Inglês — Avançado</li>
+        </ul>
+      </div>
+      <div class="bg-white/70 rounded-lg p-6 shadow hover-card">
+        <h3 class="text-xl font-bold text-blue-700 mb-3">Certificados</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Marketing Digital – Alura (80h)</li>
+          <li>Gestor de Tráfego – Alura (70h)</li>
+          <li>Meta Ads – Alura (70h)</li>
+          <li>Copywriting – Alura (40h)</li>
+          <li>Inglês Intermediário – Kaplan NY (216h)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold mb-6 text-sky-700">Projetos de Sucesso</h2>
+    <p class="text-xl text-gray-700 mb-4">
+      Ao longo da minha trajetória, tive a oportunidade de aplicar estratégias de marketing digital em empresas de diferentes segmentos, alcançando resultados significativos:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+      <li><span class="font-semibold text-blue-700">CVC Agência de Viagem:</span> Desenvolvimento de campanhas promocionais com foco em conversão, aumento expressivo no tráfego para páginas de pacotes e suporte direto às metas comerciais da loja física e canais digitais.</li>
+      <li><span class="font-semibold text-blue-700">Ikasa Contabilidade:</span> Criação de estratégias para captação de leads qualificados por meio de campanhas institucionais, com reforço de marca e conteúdos educativos para pequenas e médias empresas.</li>
+      <li><span class="font-semibold text-blue-700">Bebê da Vez:</span> Estruturação do marketing digital para uma empresa focada em apoio a mães e pais, com campanhas emocionais, segmentação eficiente e aumento no engajamento e conversões de consultas e serviços.</li>
+    </ul>
+  </div>
+</section>
+
+      
+    </div>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold text-sky-700 mb-10 text-center">Experiência Profissional</h2>
+    <div class="space-y-8">
+      <div class="p-6 bg-blue-50 rounded-xl shadow hover-card">
+        <h3 class="text-2xl font-bold text-blue-700">CVC Agência de Viagem</h3>
+        <p class="italic text-gray-600">Gestor de Tráfego • Jan 2022 – Atual</p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>Criação e otimização de campanhas digitais com foco em conversão.</li>
+          <li>Análise de dados, testes A/B e acompanhamento de métricas em tempo real.</li>
+          <li>Alinhamento com equipe de conteúdo e planejamento de estratégias persuasivas.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-blue-50 rounded-xl shadow hover-card">
+        <h3 class="text-2xl font-bold text-blue-700">Belleze Odontologia</h3>
+        <p class="italic text-gray-600">Supervisor Administrativo • Jan 2018 – Jul 2019</p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>Gestão operacional e relacionamento com clientes e fornecedores.</li>
+          <li>Organização de agenda, controle financeiro e rotinas administrativas.</li>
+          <li>Implantação de melhorias em processos internos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold mb-6 text-sky-700">Objetivo</h2>
+    <p class="text-xl text-gray-700">
+      Meu propósito é continuar crescendo como estrategista digital, contribuindo para projetos que valorizem inovação, criatividade e resultado. Quero somar com um time que acredita em ideias, mas também em execução. Que entende que marketing vai além da estética: é sobre impacto, conexão e propósito.
+    </p>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold mb-6 text-sky-700">Formação Acadêmica</h2>
+    <ul class="list-disc list-inside text-gray-700 text-xl">
+      <li>Marketing Digital — Graduação (Descomplica)</li>
+      <li>Administração de Empresas — Graduação (Universidade Ceuma)</li>
+    </ul>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto px-6 pt-16 fade-in-on-scroll">
+  <div class="glass-effect p-6">
+    <h2 class="text-4xl font-bold mb-6 text-sky-700">Fale Comigo</h2>
+    <p class="text-xl text-gray-700 mb-3">📱 WhatsApp: <a href="https://wa.me/5598991709660" class="text-blue-700 underline">98 99170-9660</a></p>
+    <p class="text-xl text-gray-700">📧 E-mail: <a href="mailto:carloseduardo.lago@yahoo.com.br" class="text-blue-700 underline">carloseduardo.lago@yahoo.com.br</a></p>
+  </div>
+</section>
+<footer class="bg-gradient-to-r from-sky-200 via-white to-sky-100 py-6">
+  <div class="text-center text-sm text-gray-700">
+    &copy; 2025 Carlos Eduardo Lago. Todos os direitos reservados.
+  </div>
+</footer>
+  </main>
+</body>
+</html>
